@@ -1,5 +1,6 @@
 <!DOCTYPE html><html><head>
- 
+ <!-- Hey I'm Chaitanya the Developer-->
+ <!-- https://github.com/Chasanpro -->
   <base href="/">
 
   <meta charset="UTF-8">
@@ -15,7 +16,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <title>dharims_web</title>
+  <title>Chronicle</title>
   <link rel="manifest" href="manifest.json">
   <script src="splash/splash.js"></script>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
@@ -28,15 +29,9 @@
   </picture>
   
   <meta name="google-signin-client_id" content="YOUR_GOOGLE_SIGN_IN_OAUTH_CLIENT_ID.apps.googleusercontent.com">
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  
-  
-
+ 
   
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-remote-config.js"></script>
@@ -46,7 +41,7 @@
     firebase.initializeApp(firebaseConfig);
   </script>
   <script>
-    var serviceWorkerVersion = '438346607';
+    var serviceWorkerVersion = '459197349';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -60,11 +55,9 @@
     }
 
     if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
+
       window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
+    
         var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
